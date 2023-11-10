@@ -21,12 +21,6 @@ class Screen2 extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 4,
-        leading: IconButton(
-          icon: Icon(Icons.menu),
-          onPressed: () {
-            // Logik für Menü
-          },
-        ),
         actions: [
           Padding(
             padding: const EdgeInsets.all(8.0),
