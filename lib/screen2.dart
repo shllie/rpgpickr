@@ -10,7 +10,7 @@ class Screen2 extends StatelessWidget {
     if (await canLaunchUrl(uri)) {
       await launchUrl(uri);
     } else {
-      throw 'Konnte die URL nicht öffnen: $uri';
+      throw 'URL kann nicht geöffnet werden: $uri';
     }
   }
 
