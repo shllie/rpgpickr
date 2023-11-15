@@ -34,7 +34,7 @@ class Screen1 extends StatelessWidget {
   }
 }
 
-class homescreen extends StatelessWidget {
+class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
