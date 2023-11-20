@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'screen2.dart';
 
 class Screen1 extends StatelessWidget {
+  const Screen1({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +25,7 @@ class Screen1 extends StatelessWidget {
                   width: 200, // Breite
                   height: 200, // Höhe
                 ),
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
                 // Weitere Inhalte hier einfügen, wenn nötig
               ],
             ),
@@ -49,7 +51,7 @@ class HomeScreen extends StatelessWidget {
                 width: 200, // Breite
                 height: 200, // Höhe
               ),
-              SizedBox(height: 16),
+              const SizedBox(height: 16),
               // Weitere Inhalte hier einfügen, wenn nötig
             ],
           ),

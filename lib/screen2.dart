@@ -39,49 +39,66 @@ class Screen2 extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Spacer(),
-              Container(
-                width: 200,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(25.0),
-                  color: Colors.white,
-                ),
-                child: TextField(
-                  controller: emailController,
-                  decoration: const InputDecoration(
-                    labelText: 'E-Mail',
-                    contentPadding: EdgeInsets.symmetric(
-                      vertical: 12,
-                      horizontal: 12,
+              Stack(
+                alignment: Alignment.center,
+                children: [
+                  Positioned(
+                    top: 100,
+                    child: Image.asset(
+                      'assets/logo.png',
+                      width: 200, // Breite
+                      height: 200, // Höhe
                     ),
                   ),
-                  style: TextStyle(
-                    fontSize: 16,
-                    color: Colors.grey[800],
+                  Column(
+                    children: [
+                      Container(
+                        width: 200,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(25.0),
+                          color: Colors.white,
+                        ),
+                        child: TextField(
+                          controller: emailController,
+                          decoration: const InputDecoration(
+                            labelText: 'E-Mail',
+                            contentPadding: EdgeInsets.symmetric(
+                              vertical: 12,
+                              horizontal: 12,
+                            ),
+                          ),
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: Colors.grey[800],
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      Container(
+                        width: 200,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(25.0),
+                          color: Colors.white,
+                        ),
+                        child: TextField(
+                          controller: passwordController,
+                          decoration: const InputDecoration(
+                            labelText: 'Passwort',
+                            contentPadding: EdgeInsets.symmetric(
+                              vertical: 12,
+                              horizontal: 12,
+                            ),
+                          ),
+                          obscureText: true,
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: Colors.grey[800],
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
-                ),
-              ),
-              const SizedBox(height: 8),
-              Container(
-                width: 200,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(25.0),
-                  color: Colors.white,
-                ),
-                child: TextField(
-                  controller: passwordController,
-                  decoration: const InputDecoration(
-                    labelText: 'Passwort',
-                    contentPadding: EdgeInsets.symmetric(
-                      vertical: 12,
-                      horizontal: 12,
-                    ),
-                  ),
-                  obscureText: true,
-                  style: TextStyle(
-                    fontSize: 16,
-                    color: Colors.grey[800],
-                  ),
-                ),
+                ],
               ),
               const SizedBox(height: 12),
               GestureDetector(
