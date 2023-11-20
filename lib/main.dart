@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/screen1': (context) => Screen1(),
         '/screen2': (context) => Screen2(),
-        // Routen hinzufügen, wenn nötig
+        // Für neue Routen
       },
     );
   }

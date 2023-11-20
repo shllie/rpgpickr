@@ -6,11 +6,9 @@ class Screen2 extends StatelessWidget {
   final TextEditingController passwordController = TextEditingController();
 
   _launchURL(String url) async {
-    final Uri uri = Uri.parse(url); // URL in ein Uri-Objekt umwandeln
+    final Uri uri = Uri.parse(url);
     if (await canLaunchUrl(uri)) {
       await launchUrl(uri);
-    } else {
-      throw 'URL kann nicht geöffnet werden: $uri';
     }
   }
 
@@ -39,14 +37,16 @@ class Screen2 extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Spacer(),
-              SizedBox(
+              Container(
                 width: 200,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(25.0),
+                  color: Colors.white,
+                ),
                 child: TextField(
                   controller: emailController,
                   decoration: InputDecoration(
-                    labelText: 'E-Mail Adresse',
-                    filled: true,
-                    fillColor: Colors.white,
+                    labelText: 'E-Mail',
                     contentPadding: EdgeInsets.symmetric(
                       vertical: 12,
                       horizontal: 12,
@@ -59,14 +59,16 @@ class Screen2 extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 8),
-              SizedBox(
+              Container(
                 width: 200,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(25.0),
+                  color: Colors.white,
+                ),
                 child: TextField(
                   controller: passwordController,
                   decoration: InputDecoration(
                     labelText: 'Passwort',
-                    filled: true,
-                    fillColor: Colors.white,
                     contentPadding: EdgeInsets.symmetric(
                       vertical: 12,
                       horizontal: 12,
@@ -82,7 +84,7 @@ class Screen2 extends StatelessWidget {
               SizedBox(height: 12),
               GestureDetector(
                 onTap: () {
-                  _launchURL('https://www.google.de'); // Link zu Google.de
+                  _launchURL('https://www.google.de');
                 },
                 child: Text(
                   'Passwort vergessen',
@@ -95,7 +97,7 @@ class Screen2 extends StatelessWidget {
               Spacer(),
               GestureDetector(
                 onTap: () {
-                  _launchURL('https://www.google.de'); // Link zu Google.de
+                  _launchURL('https://www.google.de');
                 },
                 child: Align(
                   alignment: Alignment.bottomRight,
@@ -104,7 +106,7 @@ class Screen2 extends StatelessWidget {
                     child: Text(
                       'Ohne Anmeldung fortfahren',
                       style: TextStyle(
-                        color: Colors.white,
+                        color: const Color.fromARGB(255, 231, 9, 9),
                         decoration: TextDecoration.underline,
                       ),
                     ),
