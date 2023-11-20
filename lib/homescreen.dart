@@ -15,7 +15,7 @@ class Screen1 extends StatelessWidget {
           );
         },
         child: Container(
-          color: Colors.grey[800],
+          color: Colors.grey[850],
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,

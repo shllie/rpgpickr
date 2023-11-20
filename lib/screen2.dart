@@ -38,8 +38,8 @@ class Screen2 extends StatelessWidget {
             children: [
               Image.asset(
                 'assets/logo.png',
-                width: 200, // Breite
-                height: 200, // Höhe
+                width: 200,
+                height: 200,
               ),
               const Spacer(),
               Container(
@@ -56,6 +56,7 @@ class Screen2 extends StatelessWidget {
                       vertical: 12,
                       horizontal: 12,
                     ),
+                    border: InputBorder.none,
                   ),
                   style: TextStyle(
                     fontSize: 16,
@@ -78,6 +79,7 @@ class Screen2 extends StatelessWidget {
                       vertical: 12,
                       horizontal: 12,
                     ),
+                    border: InputBorder.none,
                   ),
                   obscureText: true,
                   style: TextStyle(
@@ -95,7 +97,6 @@ class Screen2 extends StatelessWidget {
                   'Passwort vergessen',
                   style: TextStyle(
                     color: Colors.white,
-                    decoration: TextDecoration.underline,
                   ),
                 ),
               ),
@@ -112,7 +113,6 @@ class Screen2 extends StatelessWidget {
                       'Ohne Anmeldung fortfahren',
                       style: TextStyle(
                         color: Colors.white,
-                        decoration: TextDecoration.underline,
                       ),
                     ),
                   ),
