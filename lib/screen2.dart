@@ -94,9 +94,11 @@ class Screen2 extends StatelessWidget {
                   _launchURL('https://www.google.de');
                 },
                 child: const Text(
-                  'Passwort vergessen',
+                  'Passwort vergessen?',
                   style: TextStyle(
                     color: Colors.white,
+                    decoration: TextDecoration.underline,
+                    decorationColor: Colors.white, // Set underline color
                   ),
                 ),
               ),
@@ -113,6 +115,8 @@ class Screen2 extends StatelessWidget {
                       'Ohne Anmeldung fortfahren',
                       style: TextStyle(
                         color: Colors.white,
+                        decoration: TextDecoration.underline,
+                        decorationColor: Colors.white,
                       ),
                     ),
                   ),
