@@ -19,8 +19,8 @@ class Screen2 extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.grey[850],
       appBar: AppBar(
-        backgroundColor: Colors.grey[800],
-        elevation: 4,
+        backgroundColor: Colors.grey[850],
+        elevation: 0,
         actions: [
           Padding(
             padding: const EdgeInsets.all(8.0),
@@ -30,9 +30,11 @@ class Screen2 extends StatelessWidget {
           ),
         ],
       ),
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
+      body: Container(
+        height: MediaQuery.sizeOf(context).height,
+        width: MediaQuery.sizeOf(context).width,
+        padding: const EdgeInsets.all(16.0),
+        child: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -41,7 +43,6 @@ class Screen2 extends StatelessWidget {
                 width: 200,
                 height: 200,
               ),
-              const Spacer(),
               Container(
                 width: 200,
                 decoration: BoxDecoration(
@@ -102,13 +103,11 @@ class Screen2 extends StatelessWidget {
                   ),
                 ),
               ),
-              const Spacer(),
               GestureDetector(
                 onTap: () {
                   _launchURL('https://www.google.de');
                 },
-                child: const Align(
-                  alignment: Alignment.bottomRight,
+                child: const Center(
                   child: Padding(
                     padding: EdgeInsets.all(8.0),
                     child: Text(
