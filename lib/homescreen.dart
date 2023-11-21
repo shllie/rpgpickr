@@ -26,7 +26,7 @@ class Screen1 extends StatelessWidget {
                   height: 200, // Höhe
                 ),
                 const SizedBox(height: 16),
-                // Weitere Inhalte hierhin
+                // Weitere Inhalte hier
               ],
             ),
           ),
@@ -54,7 +54,7 @@ class HomeScreen extends StatelessWidget {
                 height: 200, // Höhe
               ),
               const SizedBox(height: 16),
-              // Weitere Inhalte hierhin
+              // Weitere Inhalte hier
             ],
           ),
         ),
