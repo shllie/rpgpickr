@@ -98,7 +98,7 @@ class Screen2 extends StatelessWidget {
                   style: TextStyle(
                     color: Colors.white,
                     decoration: TextDecoration.underline,
-                    decorationColor: Colors.white, // Set underline color
+                    decorationColor: Colors.white,
                   ),
                 ),
               ),
