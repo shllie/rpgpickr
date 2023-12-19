@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "686515888254",
+    "project_id": "rpg-picking-dingsydangsy",
+    "storage_bucket": "rpg-picking-dingsydangsy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686515888254:android:43b6e07fde99ab9c13f82f",
+        "android_client_info": {
+          "package_name": "com.example.rpgpickr"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeuVOjjTzOToXc4o4SHAkaudz9zmf6B0w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
