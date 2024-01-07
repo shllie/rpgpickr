@@ -26,9 +26,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'RPGpickr',
-      initialRoute: '/screen1',
+      initialRoute: '/screen2',
       routes: {
-        '/screen1': (context) => const Screen1(),
         '/screen2': (context) => Screen2(),
         // Für neue Routen
       },

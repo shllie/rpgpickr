@@ -21,7 +21,7 @@ class Screen1 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Image.asset(
-                  'assets/logo.png',
+                  'assets/icons/Frame 2.png',
                   width: 200, // Breite
                   height: 200, // Höhe
                 ),
@@ -49,7 +49,7 @@ class HomeScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                'assets/logo.png',
+                'assets/icons/pickr.png',
                 width: 200, // Breite
                 height: 200, // Höhe
               ),

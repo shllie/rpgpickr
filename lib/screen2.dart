@@ -25,7 +25,7 @@ class Screen2 extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Image.asset(
-              'assets/logostandalone.png',
+              'assets/icons/pickr.png',
             ),
           ),
         ],
@@ -39,7 +39,7 @@ class Screen2 extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                'assets/logo.png',
+                'assets/icons/pickr.png',
                 width: 200,
                 height: 200,
               ),
